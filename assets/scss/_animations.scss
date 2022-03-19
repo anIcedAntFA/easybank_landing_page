@@ -1,0 +1,47 @@
+.has-face {
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        display: visible;
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn .2s ease-in-out forwards;
+    //forwards ensure once animations is completed it will 
+    // stay whatever styles that you've put on
+}
+
+@keyframes fadeOut {
+    from {
+        visibility: visible;
+        opacity: 1
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut .2s ease-out forwards;
+}
