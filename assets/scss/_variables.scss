@@ -10,5 +10,13 @@ $white: hsl(0, 0%, 100%);
 // Font Sizes
 $font-sm: .865rem;
 $font-med: 1.125rem;
-$font-lg: .865rem;
-$font-xlg: .865rem;
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+
+// Transition
+$transition-all: all .3s ease-in-out;
+$transition-opacity: opacity .3s ease-in-out;
+$transition-color: color .3s ease-in-out;
+
+// Opacity
+$opacity: .8;

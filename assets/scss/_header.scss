@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 1;  
 
     nav {
         position: relative;
@@ -52,16 +54,6 @@
                     opacity: .8;
                 }
             }
-        }
-    }
-
-    &__cta {
-        font-size: $font-sm;
-        color: $white;
-        transition: opacity .3s ease-in-out;
-
-        &:hover {
-            opacity: .7;
         }
     }
 
