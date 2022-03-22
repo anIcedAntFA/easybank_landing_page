@@ -44,14 +44,14 @@
 
                 background: linear-gradient(to right, $limeGreen, $brightCyan);
                 opacity: 0;
-                transition: opacity .3s ease-in-out;
+                transition: $transition-opacity;
             }
 
             &:hover {
                 color: $limeGreen;
 
                 &::before {
-                    opacity: .8;
+                    opacity: $opacity;
                 }
             }
         }
@@ -67,7 +67,7 @@
 
             background-color: $darkBlue;
 
-            transition: all .3s ease-in-out;
+            transition: $transition-all;
             transform-origin: 4px 1.5px;
 
             &:not(:last-child) {

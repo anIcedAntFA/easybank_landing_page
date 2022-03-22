@@ -1,5 +1,6 @@
 .feature {
     text-align: center;
+
     background-color: $lightGrayishBlue;
 
     @include breakpoint-up(medium){
@@ -28,7 +29,7 @@
         &:hover {
             .feature__title {
                 color: $limeGreen;
-                opacity: .9;
+                opacity: $opacity;
             }
         }
 
@@ -50,12 +51,13 @@
     }
 
     &__title {
+        margin-bottom: 1rem;
+        
         font-size: 1.25rem;
         font-weight: 300;
         line-height: 1.15;
         color: $darkBlue;
-        margin-bottom: 1rem;
-        transition: color .3s ease-in-out;
+        transition: $transition-color;
 
         @include breakpoint-up(large){
             font-size: 1.5rem;

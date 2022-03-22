@@ -19,20 +19,21 @@
         border-radius: 0.3125rem;
         background-color: $white;
         box-shadow: 0 3px 12px rgba(0, 0, 0, .2);
-        transition: all .3s ease-in-out;
+        transition: $transition-all;
 
         &:hover {
             transform: scale(1.06);
 
             .article__title {
                 color: $limeGreen;
-                opacity: .8;
+                opacity: $opacity;
             }
         }
     }
 
     &__img {
         height: 12.5rem;
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -48,20 +49,21 @@
     }
 
     &__author {
-        font-size: 0.625rem;
 		margin-bottom: 0.75rem;
+
+        font-size: 0.625rem;
     }
 
     &__title {
+		margin-bottom: 0.5rem;
+
         font-size: 1.0625rem;
 		line-height: 1.2;
 		color: $darkBlue;
-		margin-bottom: 0.5rem;
-        transition: color .3s ease-in-out;
+        transition: $transition-color;
     }
 
     &__description {
         font-size: 0.8125rem;
     }
-
 }
